@@ -59,9 +59,9 @@ class InvertedPendulumGUI:
 
         # PIDs
         # Position PID (outer loop)
-        self.pos_pid = PIDController(kp=0.5, ki=0.0, kd=0.6, output_limits=(-0.4, 0.4))
+        self.pos_pid = PIDController(kp=0.4428, ki=0.1252, kd=2.7749, output_limits=(-0.4, 0.4))
         # Angle PID (inner loop)
-        self.ang_pid = PIDController(kp=150.0, ki=5.0, kd=40.0, output_limits=(-200, 200))
+        self.ang_pid = PIDController(kp=51.9314, ki=6.8996, kd=68.3069, output_limits=(-200, 200))
         
         self._build_gui()
         
